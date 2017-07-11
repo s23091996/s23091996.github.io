@@ -25,6 +25,18 @@
         a {
             text-decoration: none;
         }
+
+        .w3-bar {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+            /* IE 8 */
+            filter: alpha(opacity=50);
+            /* IE 5-7 */
+            -moz-opacity: 0.5;
+            /* Netscape */
+            -khtml-opacity: 0.5;
+            /* Safari 1.x */
+            opacity: 0.5;
+        }
     </style>
 </head>
 
@@ -35,25 +47,58 @@
         <a href="#" class="w3-bar-item w3-button">Link 2</a>
         <a href="#" class="w3-bar-item w3-button">Link 3</a>
     </div>-->
+
+    <!--<div class="w3-bar">
+        <a href="#" class="w3-bar-item">TutSpot</a>
+        <a href="#" class="w3-bar-item w3-right">Home</a>
+        <a href="#" class="w3-bar-item w3-right">About Us</a>
+        <a href="#" class="w3-bar-item w3-right">Contact Us</a>
+    </div>-->
+
     <div class="bgimg1 w3-display-container w3-text-white">
         <div class="w3-display-topleft w3-padding-large w3-xlarge w3-animate-opacity">
             TutSpot
         </div>
         <div class="w3-display-topright w3-padding-large w3-large">
-            <a href="#">Home</a>
-            <a href="#page2">About Us</a>
+            <a href="#">Home</a>&nbsp;&nbsp;
+            <a href="#page2">About Us</a>&nbsp;&nbsp;
+            <a href="#">Contact Us</a>
         </div>
         <div class="w3-display-middle">
             <h1 class="w3-xxxlarge w3-animate-top">What do want to study today?</h1>
-            <input class="w3-input w3-display-center w3-round-large w3-animate-input w3-border-0" type="text" id="searchQuery" style="width:70%"
-            />
+            <input class="w3-input w3-display-center w3-round-large w3-animate-left w3-animate-input w3-border-0" type="text" id="searchQuery"
+                style="width:70%" />
             <hr class="w3-border-grey" style="margin:auto;width:40%">
             <p class="w3-large w3-center">
-                <button class="w3-button w3-green w3-round-xlarge">Fingers Crossed</button>
+                <button class="w3-button w3-green w3-animate-bottom w3-round-xlarge">Fingers Crossed</button>
             </p>
         </div>
     </div>
-    <div class="bgimg1 w3-display-container w3-text-white" id="page2">Page 2</div>
+    <div class="w3-row" id="page2">
+        <div class="w3-col w3-center w3-xxxlarge">A Common Platform For Students and Teachers</div>
+        <div class="w3-half w3-light-grey w3-container w3-center" style="height:600px">
+            <div class="w3-padding-32 w3-center">
+                <h1>Students</h1>
+                <img src="random.jpg" class="w3-circle" alt="Student" style="width:300px; height:300px">
+            </div>
+            <div class="w3-left-align w3-padding-64 w3-center">
+                <p>Get Refernce to all the students in your viscinity</p>
+                <p>Connecting with students was never so easy</p>
+            </div>
+        </div>
+        <div class="w3-half w3-blue-grey w3-container" style="height:600px">
+            <div class="w3-padding-32 w3-center">
+                <h1>Teachers</h1>
+                <img src="random.jpg" class="w3-circle" alt="Teacher" style="width:300px; height:300px">
+            </div>
+            <div class="w3-left-align w3-padding-64 w3-center">
+                <p>Find tutors nearest to you</p>
+                <p>Less time in travelling, more time to productivity</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="bgimg1 w3-display-container w3-text-white">Last Page</div>
 </body>
 
 </html>
